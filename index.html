@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>VALIDACION</title>
+
+  <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+</head>
+<body>
+  <form action="index.html" id="form" method="post">
+    <input type="text" name="nif" placeholder="NIF" value=""><br>
+    <input type="text" name="nombre" placeholder="Nombre" value=""><br>
+    <input type="text" name="apellidos" placeholder="Apellidos" value=""><br>
+    Masculino<input type="radio" checked name="sexo" value="masculino">
+    Femenino<input type="radio" name="sexo" value="femenino"><br>
+    <input type="email" name="email" placeholder="Email" value=""><br>
+    <input type="text" name="telefono" placeholder="Telefono" value=""><br>
+    <input type="text" name="calle" placeholder="Calle" value=""><br>
+    <input type="text" name="codpostal" placeholder="Cod Postal" value=""><br>
+    <select>
+      <option value="ordizia">Ordizia</option>
+      <option value="saab">Tolosa</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select><br>
+    Newsletter<input type="checkbox" name="newsletter"  value="">
+    <br><input type="submit" name="enviar" value="Enviar">
+  </form>
+  <script src="js/script.js"></script>
+</body>
+</html>
