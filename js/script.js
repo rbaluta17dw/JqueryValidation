@@ -1,19 +1,40 @@
 $(document).ready(function () {
-
   $('#form').validate({ // initialize the plugin
     rules: {
       nif:{
-        required: true;
+        minlength: 8,
+        maxlength: 8
+      },
+      nombre: {
+        required: true
+      },
+      apellidos:{
+        required: true
+      },
+      sexo:{
+        required: true
       },
       email: {
         required: true,
         email: true
       },
-      nombre: {
-        required: true,
-        minlength: 5
+      telefono:{
+        minlength: 8
+        //telefono()
       }
     }
   });
 
 });
+
+/*
+function telefono(){
+  var telefono = document.forms['form']['telefono'].value;
+  var nums = /\d/;
+  if (nums.test(telefono)) {
+    return true;
+  }else {
+    return false;
+  }
+}
+*/
